@@ -36,7 +36,7 @@ export default function Home() {
 
   const [loading, setLoading] = useState<string | null>(null);
 
-  const API_URL = 'http://localhost:8000/api';
+  const API_URL = 'https://adhd-copilot-backend.onrender.com/api';
 
   const handleBrainDump = async () => {
     setLoading('braindump');
