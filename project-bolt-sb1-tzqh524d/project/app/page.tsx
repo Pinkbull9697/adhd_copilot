@@ -194,7 +194,7 @@ export default function Home() {
                   </CardHeader>
                   <CardContent>
                     <ul className="space-y-2">
-                      {brainDumpResult.urgent.map((item, i) => (
+                      {brainDumpResult?.urgent?.map((item, i) => (
                         <li key={i} className="flex gap-2">
                           <span className="text-red-500 font-bold">•</span>
                           <span className="text-slate-700">{item}</span>
@@ -210,7 +210,7 @@ export default function Home() {
                   </CardHeader>
                   <CardContent>
                     <ul className="space-y-2">
-                      {brainDumpResult.later.map((item, i) => (
+                      {brainDumpResult?.later?.map((item, i) => (
                         <li key={i} className="flex gap-2">
                           <span className="text-blue-500 font-bold">•</span>
                           <span className="text-slate-700">{item}</span>
@@ -226,7 +226,7 @@ export default function Home() {
                   </CardHeader>
                   <CardContent>
                     <ul className="space-y-2">
-                      {brainDumpResult.emotional_processing.map((item, i) => (
+                      {brainDumpResult?.emotional_processing?.map((item, i) => (
                         <li key={i} className="flex gap-2">
                           <span className="text-purple-500 font-bold">•</span>
                           <span className="text-slate-700">{item}</span>
